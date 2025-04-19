@@ -1,0 +1,628 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.header-content p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.header-nav a {
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+}
+
+.header-nav > a:hover {
+  color: orangered;
+}
+
+.second-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.logo {
+  width: 10%;
+  text-align: center;
+}
+
+.logo p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.help-line {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  text-indent: 30px;
+}
+
+.fa-headphones {
+  font-size: 50px;
+}
+
+.help-line-content p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mix-container {
+  display: flex;
+  width: 40%;
+  align-items: center;
+  border: 1px solid orange;
+  border-radius: 20px;
+}
+
+.dropdown > option {
+  padding: 4px;
+  border: none;
+  border-radius: 20px;
+}
+
+.searchbar {
+  display: flex;
+  align-content: center;
+}
+
+.searchbar input {
+  width: 440px;
+  border: transparent;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.searchbar input:focus {
+  outline: none;
+  border: 1px solid orange;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.searchbar button {
+  background-color: orange;
+  color: black;
+  border: transparent;
+  padding: 5px 10px;
+  cursor: pointer;
+  width: 170px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.icons {
+  display: flex;
+  width: 30%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.categories-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favourites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.third-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.third-container > nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.third-container > nav > a {
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: black;
+}
+
+.third-container > nav > a:hover {
+  color: orangered;
+}
+
+.list-dropdown {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero {
+  background-color: rgb(228, 228, 228);
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+}
+
+.hero-navigation {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  gap: 10px;
+  margin-bottom: 5px;
+  background-color: white;
+}
+
+.hero-nav-item p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero-nav-item > p:hover {
+  color: blue;
+}
+
+.hero-nav-item-two {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 5px;
+  border-bottom: 1px solid silver;
+}
+
+.hero-nav-item-two > p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero-nav-item-two > p:hover {
+  color: blue;
+}
+
+.hero-image {
+  width: 70%;
+}
+
+.hero-image img {
+  width: 1190px;
+  height: 93%;
+}
+
+.carts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.cart-one {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 10px;
+  border-right: 1px solid silver;
+}
+
+.cart-one > i {
+  font-size: 30px;
+}
+
+.cart-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-header {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
+.sup-content {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+}
+
+.product-cart {
+  width: 100%;
+  display: flex;
+  gap: 4%;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.pre-order {
+  height: 250px;
+  width: 35%;
+  background: url(../images/banners/Smart-one.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.pre-order {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+
+.pre-order-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.pre-order-header p {
+  font-size: 20px;
+  color: white;
+}
+
+.order-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.order-price p {
+  color: white;
+}
+
+.order-price a {
+  color: white;
+}
+
+.pre-order-two {
+  height: 250px;
+  width: 35%;
+  background: url(../images/banners/juice.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.pre-order-one {
+  height: 250px;
+  width: 35%;
+  background: url(../images/banners/camer.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.top-category {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.top-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.empty-categories {
+  border-top: 3px solid silver;
+  height: 1px;
+  width: 80%;
+}
+
+.categories-content {
+  display: flex;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 4px 5px silver;
+}
+
+.row-one {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-two {
+  display: flex;
+  flex-direction: row;
+}
+.product-one {
+  height: 150px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid silver;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+}
+
+.product-one img {
+  height: 150px;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flash-sale {
+  padding: 10px;
+}
+
+.flash-heading {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-flash {
+  font-weight: bold;
+  width: 20%;
+}
+
+.border {
+  height: 1px;
+  width: 40%;
+  border: 2px solid silver;
+}
+.flash-sale {
+  display: flex;
+  flex-direction: column;
+}
+.flash-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  width: 40%;
+}
+
+.flash-nav > a {
+  text-decoration: none;
+  color: black;
+}
+
+.flash-nav > a:hover {
+  color: blue;
+}
+
+.flash-content-one {
+  display: flex;
+  flex-direction: row;
+}
+.flash-content-details {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  align-items: center;
+  height: 340px;
+  width: 680px;
+  border-radius: 7px;
+}
+
+.flash-content-details img {
+  height: 240px;
+  width: 240px;
+}
+
+.flash-content-one {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all .5s ease-in-out;
+}
+
+.card img {
+  height: 250px;
+  padding: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-body a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.card:hover {
+  scale: 1.05;
+}
+
+.three-card {
+  display: flex;
+  gap: 10px;
+}
+
+.firstcard {
+  height: 330px;
+  width: 240px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  transition: all .5s linear;
+  border-radius: 5px;
+}
+
+.firstcard img {
+  height: 120px;
+}
+
+.firstcard-detilas {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.firstcard-detilas a {
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.firstcard:hover{
+  transform: scale(1.1);
+}
+
+.mobile-section{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.brands{
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 15px;
+  
+}
+
+.brand-logo{
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center ;
+  transform: scale3d(1.1);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(228, 228, 228);
+  background-color: black;
+}
+
+.footer-logo a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-socials{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.footer-socials a{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.news-letter p {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.copy-right{
+  background-color: black;
+  color: white;
+  border-top: 1px solid silver;
+}
+
+.copy-right p{
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  padding: 5px;
+}
